@@ -397,6 +397,10 @@ caf:
     # Maximum number of messages actors can consume in one run.
     max-throughput: 500
 
+    # Upper bound of actions that can be processed by an actor before the next
+    # message is consumed.
+    run-actions-timeout: 100ms
+
   # When using "stealing" as scheduler policy.
   work-stealing:
 

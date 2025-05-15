@@ -380,6 +380,7 @@ in {
     # not provide all the flags that are used in stdenv phases. We just add it
     # to the PATH in the checkPhase directly as a workaround.
     #toybox
+    uv
     yara
   ] ++ final.tenzir-integration-test-runner;
   pythonPackagesExtensions =
